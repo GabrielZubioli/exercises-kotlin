@@ -10,6 +10,8 @@ fun main(){
     area()
 }
 
+
+
 fun trocaValor() {
     var a: String = "a"
     var b: String = "b"
