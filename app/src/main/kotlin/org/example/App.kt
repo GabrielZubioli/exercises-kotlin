@@ -6,7 +6,7 @@ package org.example
 class App
 
 fun main(){
-    //trocaValor()
+    trocaValor()
     area()
 }
 
