@@ -3,13 +3,32 @@
  */
 package org.example
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
+class App
+
+fun main(){
+    //trocaValor()
+    area()
 }
 
-fun main() {
-    println(App().greeting)
+fun trocaValor() {
+    var a: String = "a"
+    var b: String = "b"
+
+    println("A = $a\nB = $b")
+
+    val c: String = a
+    a = b
+    b = c
+
+    println("A = $a\nB = $b")
+}
+
+fun area(){
+    print("Digite o valor do raio: ")
+    val raio = readLine()!!.toDouble()
+    val pi : Double =  3.14159265
+
+    val area: Double = (raio * raio) * pi
+
+    println("Area : $area")
 }
