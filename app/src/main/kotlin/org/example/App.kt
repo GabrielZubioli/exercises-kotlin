@@ -6,8 +6,11 @@ package org.example
 class App
 
 fun main(){
-    trocaValor()
-    area()
+//    trocaValor()
+//    area()
+//    somaQuadrados(3,3,3)
+//   veloProjetil(150, 30)
+    letraRep("Ola", "ola")
 }
 
 fun trocaValor() {
@@ -31,4 +34,28 @@ fun area(){
     val area: Double = (raio * raio) * pi
 
     println("Area : $area")
+}
+
+fun somaQuadrados(x: Int, y: Int, z: Int){
+    val num1 = x
+    val num2 = y
+    val num3 = z
+
+    val somaQuad = (num1 * num1) + (num2 * num2) + (num3 * num3)
+
+    println("O valo da soma dos quadrados é $somaQuad")
+}
+
+fun veloProjetil(dist: Int, temp: Int){
+    val velocidade = (dist * 1000) / (temp * 60)
+    println("$velocidade KM/S")
+}
+
+fun letraRep(text: String, text2: String) {
+    val tamanho = minOf(text.length, text2.length)
+    for (i in 0 until tamanho){
+        if (text[i] == text2[i]){
+            println("O caracter igual é ${text[i]}")
+        }
+    }
 }
